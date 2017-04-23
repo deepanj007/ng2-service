@@ -1,0 +1,14 @@
+<p>
+  home works!
+</p>
+
+ <form (submit)="add()">
+    <input type="number" class="form-control" name="text1" [(ngModel)]="text1">
+    <input type="number" class="form-control" name="text2" [(ngModel)]="text2">
+    <button (click)="add()">Add</button><br>
+    <div *ngIf="result">Result: {{result}}</div>
+  </form>
+
+  <ng-progress [positionUsing]="'marginLeft'" [minimum]="0.15" [maximum]="1"
+             [speed]="'200'" [showSpinner]="false" [direction]="'leftToRightIncreased'"
+             [color]="'green'" [trickleSpeed]="500" [thick]="false" [ease]="'linear'"></ng-progress>
